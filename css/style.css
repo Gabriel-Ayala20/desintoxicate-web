@@ -1,0 +1,30 @@
+
+
+.social{
+    display: flex;
+    justify-content:right ;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
+.social a {
+    position: relative;
+    width: 2rem;
+    height: 2.5rem;
+   margin: 2rem; 
+   background-repeat: no-repeat;
+   background-size: 2rem;
+   filter: grayscale(90%) opacity(.8);
+}
+.facebook{
+    background-image: url(../assets/icons/facebook-brands.svg);
+}
+.instagram{
+    background-image: url(../assets/icons/instagram-brands.svg);
+}
+.linkedin{
+    background-image: url(../assets/icons/linkedin-brands.svg);
+}
+.github{
+    background-image: url(../assets/icons/github-brands.svg);
+}

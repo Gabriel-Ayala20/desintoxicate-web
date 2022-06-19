@@ -1,0 +1,22 @@
+#bg-help-us{
+    background: url('/assets/bg/spring-floral-bg.jpg') 100% center/cover no-repeat ;
+    height: 760px;
+}
+
+.bg-help-us{
+    
+    padding: min(40%, 70px) 1rem;
+    font-size: min(calc(2vw + .5rem), 3rem);
+    color: #eee;
+    text-shadow: 0.5rem 0.5rem 1rem rgb(0, 0, 0);
+    background: url('/assets/images/dejanos-ayudarte-hands.webp') 50% 50%/min(100%, 760px) no-repeat;
+    background-attachment: 
+        scroll,
+        fixed,
+        fixed;
+    text-align: center;
+}
+
+.margin-auto{
+    margin: 0.5rem auto;
+}
