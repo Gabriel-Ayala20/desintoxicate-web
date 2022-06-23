@@ -1,20 +1,47 @@
 
 
+/* Reglas Generales */
+
+/* Cabecera */
+
+/* Main*/ 
+
+.display-flex{
+    display: flex;
+    }
+    .box {
+    
+    border: 1px solid black;
+    background-color: green;
+    margin: 1rem auto;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  black;
+    }
+    .margin-auto{
+        margin: 0.5rem auto;
+    }
 /*FOOTER*/
+.footer-container{
+    border: 0.5rem green solid;
+    
+}
 
 .enlaces{
+   
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     padding: 0.5rem;
     height: 1.5rem;
+    width: 30%;
 }
 
 .enlaces a {
     position: relative;
     margin: 1rem;
     flex-wrap: wrap;
-
+  
 }
 
 .social{
@@ -49,5 +76,8 @@
 
 .copy{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    position: relative;
+    height: 2px;
+    padding: 1rem;
 }
