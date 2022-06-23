@@ -1,6 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(177, 218, 177);
+} 
+
+.logo-superior{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.buscador input{
+    width: 300px;
+    padding: 10px
+}
+header .logo-superior p{
+    margin: 0px;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: green;
+    font-size: 1.6em;
+}
+
+.container-menu{
+    width: 100%;
+    height: 70px;
+    padding: 0px 20px;
+    background-color: rgb(92, 178, 92);
+}
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+nav{
+    height: 100%;
+}
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+nav > ul > li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+nav >ul >li>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    align-items: center;
+    transition: all 300ms ease;
+}
+nav >ul >li>a:hover{
+    transform: scale(1.1);
+    background-color: rgb(18, 155, 18);;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90px;
+    list-style: none;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}   
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+nav ul li ul:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+} 
+nav ul li ul li a{
+    display: block;
+    color: rgb(39, 176, 39);
+    padding: 10px;
+    margin-left: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+nav ul li ul li a:hover{
+    background-color: rgb(177, 218, 177);
+    color: #fff;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+
+
 #bg-help-us{
+
     background: url('/assets/bg/spring-floral-bg.jpg') 100% center/cover no-repeat ;
-    height: 760px;
+   
 }
 
 .bg-help-us{
@@ -19,26 +152,33 @@
 
 .margin-auto{
     margin: 0.5rem auto;
-}
+} 
 
 
 
 
 /*FOOTER*/
+.footer-container{
+    background-color: rgb(92, 178, 92);
+}
 
 .enlaces{
+   
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     padding: 0.5rem;
     height: 1.5rem;
+    width: 30%;
 }
 
 .enlaces a {
     position: relative;
     margin: 1rem;
     flex-wrap: wrap;
-
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .social{
@@ -47,6 +187,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0.5rem;
+    
 }
 
 .social a {
@@ -57,6 +198,7 @@
    background-repeat: no-repeat;
    background-size: 1.5rem;
    filter: grayscale(90%) opacity(.8);
+   
 }
 .facebook{
     background-image: url(../assets/icons/facebook-brands.svg);
@@ -74,4 +216,10 @@
 .copy{
     display: flex;
     justify-content: center;
+    position: relative;
+    height: 1px;
+    padding: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
 }
