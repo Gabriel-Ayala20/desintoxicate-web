@@ -13,20 +13,25 @@
 
 <body>
     <header>
+        <!--Logo del equipo (momentaneo)-->
         <div class="logo-superior">
             <div>
                 <p>Desintoxicate!</p>
             </div>
+            <!--barra de busqueda ezquina superior izquierda-->
             <div class="buscador">
                 <input type="search" name="txtBuscador" id="txtBuscador" placeholder="¿Que buscas?">
             </div>
         </div>
+        <!--Barra de navegación superior principal-->
         <div class="container-menu">
             <div class="menu">
                 <nav>
                     <ul>
+                        <!--La etiqueta # hace que se refresque la pagina donde uno esta ubicado-->
                         <li><a href="#" class="active">Inicio</a></li>
                         <li><a href="/secciones/tiposDeDrogas.html">Tipos de drogas</a>
+                            <!--Este ul contiene el submenu de tipos de drogas-->
                            <ul>
                             <li><a href="#">Marihuana</a></li>
                             <li><a href="#">Cocaina</a></li>
@@ -40,22 +45,25 @@
                 </nav>
             </div>
         </div>
-
-
     </header>
     <main>
+            <!--Menu carrousel implementado con  bootstrap 5-->
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/assets/images/Bob.webp" class="d-block w-50 margin-auto" alt="Bob">
+                        <img src="/assets/images/uniondeequipo.jpg" class="d-block w-50 margin-auto" alt="Bob">
                     </div>
                     <div class="carousel-item">
-                        <img src="/assets/images/Dave.webp" class="d-block w-50 margin-auto" alt="Dave">
+                        <img src="/assets/images/manos.jpg" class="d-block w-50 margin-auto img-circle" alt="Dave">
                     </div>
                     <div class="carousel-item">
-                        <img src="/assets/images/Minioms1.jpg" class="d-block w-50 margin-auto " alt="Minioms1">
+                        <img src="/assets/images/darlamano.jpg" class="d-block w-50 margin-auto " alt="Minioms1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/union.jpg" class="d-block w-50 margin-auto " alt="Minioms1">
                     </div>
                 </div>
+                <!--Botones de foto anterior y siguiente del carrousel -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -67,13 +75,11 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-    
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2>Cuadros</h2>
-                </div>
-            </div>
+
+            <!--Creamos cards para los cuadros de información-->
             
+
+            <!--
             <div class=" display-flex ">
                 <div class="col-4">
                     <div class="box mb-3 ">Aqui va informacion</div>
@@ -89,12 +95,11 @@
                   </div>
     
             </div>
-
+            -->
     </main>
 
-
+        <!--Parte principal del footer-->
     <footer class="footer-container">
-
         <div class="footer-general">
             
             <div class="enlaces">
@@ -110,7 +115,7 @@
     
             </div>
 
-          
+            <!--Parte social del footer-->
             <div class="social">
               
                     <a class="facebook" href="https://www.facebook.com/" 
@@ -139,10 +144,12 @@
                     ></a>
                
             </div>
-
         </div>
+          <!--Derechos reservados copy--> 
         <p class="copy mb-0">&copy;2022 Todos los derechos reservados</p>
     </footer>
+
+    <!--Codigo de js para que funcione en html-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
