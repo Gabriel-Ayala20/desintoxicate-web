@@ -12,6 +12,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.active{
+    color: rgb(251, 251, 0);
+}
 header{
     width: 100%;
     position: relative;
