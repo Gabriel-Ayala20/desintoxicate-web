@@ -156,6 +156,7 @@ nav ul li ul li a:hover{
 */
 .form-control{
     border-radius: 15px;
+    border: 1px solid #E06100;
 }
 .margin-auto{
     margin: 0.5rem auto;

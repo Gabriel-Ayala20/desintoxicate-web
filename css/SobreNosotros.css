@@ -4,17 +4,21 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 #fondo-sobre-nosotros{
-    background-color: #97FF66;
+    background: url('/assets/bg/spring-floral-bg.jpg') 100% center/cover no-repeat ;
 }
 .card{
-    background-color: #FFC366    ;
+    background-color: #cadfa4    ;
+}
+h1, h3, h4{
+    color: #131313;
+    font-weight: 400;
 }
 .fa-github {
     font-size: 30px;
     color: white;
 }
 .fa-linkedin-in{
-    color: #ff4a49;
+    color:  #cadfa4 ;
     background-color: white;
     font-size: 20px;
     border: 0px;
@@ -26,8 +30,8 @@ body{
     margin: 0 8px;
 }
 .card p{
-    color: #fff;
-    font-weight: 100;
+    color: #131313;
+    font-weight: 700;
 }
 *{
     margin: 0;
